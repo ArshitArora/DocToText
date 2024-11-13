@@ -9,7 +9,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "vercel_test/wsgi.py"
+            "dest": "docToText/wsgi.py"
         }
     ]
 }
