@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "9509ef9f-40e6-4fa2-8a4d-7099a7e3867c",
+		"name": "docToText",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29339606"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/doc-to-text/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/user/Downloads/sampleData/AI Chatbot for Mostkino.docx"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/doc-to-text/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/pdf-to-text/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/user/Downloads/sampleData/The RÁMÁYAN of VÁLMÍKI.pdf"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/pdf-to-text/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/yt-to-text/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "url",
+							"value": "https://www.youtube.com/watch?v=NOhDyUmT9z0",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/yt-to-text/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/txt-to-text/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/user/Downloads/pers/gemini-1.5-flash-llm/Data/clothingData.txt"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/txt-to-text/"
+			},
+			"response": []
+		}
+	]
+}
