@@ -7,5 +7,8 @@ urlpatterns = [
     path('pdf-to-text/', views.pdf_to_text, name='pdf_to_text'),
     path('audio-to-text/',views.audio_to_text,name='audio_to_text'),
     path('image-to-text/',views.image_to_text,name='image_to_image'),
+    path('image-db/',views.create_image_db,name='create_image_db'),
+    path('chat/',views.chat_with_image,name='chat_with_image'),
+    path('health-check',views.health_check,name='health_check'),
 ]
 
